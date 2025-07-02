@@ -125,7 +125,7 @@ module Datapath #(
   assign reg_write_sig = D.RegWrite;
 
   // //sign extend
-  imm_Gen Ext_Imm (
+  imm_Gen Ext_Imm ( // calcula o valor do imediato a partir dos bits da instruçao
       A.Curr_Instr,
       ExtImm
   );
@@ -189,7 +189,7 @@ module Datapath #(
   assign Funct3 = B.func3;
   assign ALUOp_Current = B.ALUOp;
 
-  mux4 #(32) FAmux (
+  mux4 #(32) FAmux ( // Mux do Forward de A
       B.RD_One,
       WrmuxSrc,
       C.Alu_Result,
@@ -197,7 +197,7 @@ module Datapath #(
       FAmuxSel,
       FAmux_Result
   );
-  mux4 #(32) FBmux (
+  mux4 #(32) FBmux ( // Mux do Forward de B
       B.RD_Two,
       WrmuxSrc,
       C.Alu_Result,
@@ -205,7 +205,7 @@ module Datapath #(
       FBmuxSel,
       FBmux_Result
   );
-  mux2 #(32) srcbmux (
+  mux2 #(32) srcbmux ( // pega ou o valor do Forward de B, ou o imediato, ou o valor da ALU de B
       FBmux_Result,
       B.ImmG,
       B.ALUSrc,
@@ -217,7 +217,7 @@ module Datapath #(
       ALU_CC,
       ALUResult
   );
-  BranchUnit #(9) brunit (
+  BranchUnit #(9) brunit ( 
       B.Curr_Pc,
       B.ImmG,
       B.Branch,

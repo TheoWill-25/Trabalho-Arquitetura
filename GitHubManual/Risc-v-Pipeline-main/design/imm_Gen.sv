@@ -5,7 +5,7 @@ module imm_Gen (
     output logic [31:0] Imm_out
 );
 
-
+  // falta implementar o I_TYPE do inst_code para o Opcode 0010011
   always_comb
     case (inst_code[6:0])
       7'b0000011:  /*I-type load part*/
