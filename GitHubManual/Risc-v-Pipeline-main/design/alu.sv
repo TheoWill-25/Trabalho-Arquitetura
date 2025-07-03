@@ -39,7 +39,7 @@ module alu#(
                     ALUResult = SrcA << SrcB;
             4'b1110:        // SRLI
                     ALUResult = SrcA >> SrcB;
-            4'b1001:        // SRAI
+            4'b1111:        // SRAI
                     ALUResult = SrcA >>> SrcB;
             default:
                     ALUResult = 0;
