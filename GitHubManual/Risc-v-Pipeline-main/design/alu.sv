@@ -23,8 +23,8 @@ module alu#(
                     ALUResult = SrcA + SrcB;
             4'b0100:        // SLT/SLTI
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
-            4'b0000:        // XOR
-                    ALUResult = SrcA ^ SrcB;
+            4'b0101:        // XOR
+                    ALUResult = SrcA^SrcB;
             4'b0110:        // SUB
                     ALUResult = SrcA - SrcB;
             4'b1000:        // Equal
@@ -40,7 +40,7 @@ module alu#(
             4'b1110:        // SRLI
                     ALUResult = SrcA >> SrcB;
             4'b1111:        // SRAI
-                    ALUResult = SrcA >>> SrcB;
+                    ALUResult = $signed(SrcA) >>> SrcB[4:0];
             default:
                     ALUResult = 0;
             endcase
