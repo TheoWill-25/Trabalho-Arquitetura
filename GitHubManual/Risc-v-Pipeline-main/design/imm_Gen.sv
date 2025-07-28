@@ -27,8 +27,30 @@ module imm_Gen (
         1'b0
       };
 
+      7'b1101111:  /*J-type*/JAL
+      Imm_out = {
+        inst_code[31] ? 11'hFFF : 11'b0,
+        inst_code[31],
+        inst_code[19:12],
+        inst_code[20],
+        inst_code[30:21],
+        1'b0 ///testar
+      }
+
+      7'b1100111:  /*J-type*/JALR
+      Imm_out = {
+        inst_code[31] ? 11'hFFF : 11'b0,
+        inst_code[31],
+        inst_code[19:12],
+        inst_code[20],
+        inst_code[30:21],
+        1'b0  ///testar
+      }
+
       default: Imm_out = {32'b0};
 
     endcase
+    // JAL : JAL rd, i -> 20bits portanto, rd = PC + 4 e PC = PC + i;
+    // JALR: JALR xn, xm, i -> 12bits portanto, xn = PC + 4 e  PC = xm + i;
 
 endmodule

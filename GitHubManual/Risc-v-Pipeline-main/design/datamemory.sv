@@ -39,18 +39,18 @@ module datamemory #(
     if (MemRead) begin
       case (Funct3)
         3'b000:  //LB
-        if(a[1:0] == 2'b00) rd <= (Dataout[7] == 1) ? {(24'hfff), Dataout[7:0]} : Dataout[7:0];
-        else if(a[1:0] == 2'b01) rd <= (Dataout[15] == 1) ? {(24'hfff), Dataout[15:8]} : Dataout[15:8];
-        else if(a[1:0] == 2'b10) rd <= (Dataout[23] == 1) ? {(24'hfff), Dataout[23:16]} : Dataout[23:16];
-        else if(a[1:0] == 2'b11) rd <= (Dataout[31] == 1) ? {(24'hfff), Dataout[31:24]} : Dataout[31:24];
+        if(a[1:0] == 2'b00) rd <= $signed(Dataout[7:0]);
+        else if(a[1:0] == 2'b01) rd <= $signed(Dataout[15:8]);
+        else if(a[1:0] == 2'b10) rd <= $signed(Dataout[23:16]);
+        else if(a[1:0] == 2'b11) rd <= $signed(Dataout[31:24]);
         3'b100:  //LBU
         if(a[1:0] == 2'b00) rd <= Dataout[7:0];
         else if(a[1:0] == 2'b01) rd <= Dataout[15:8];
         else if(a[1:0] == 2'b10) rd <= Dataout[23:16];
         else if(a[1:0] == 2'b11) rd <= Dataout[31:24];
         3'b001:   //LH
-        if(a[1:0] == 2'b00) rd <= (Dataout[15] == 1) ? {(16'hff), Dataout[31:16]} : Dataout[31:16];
-        else if(a[1:0] == 2'b10) rd <= (Dataout[31] == 1) ? {(16'hff), Dataout[31:16]} : Dataout[31:16];
+        if(a[1:0] == 2'b00) rd <= $signed(Dataout[15:0]);
+        else if(a[1:0] == 2'b10) rd <= $signed(Dataout[31:16]);
         3'b010:  //LW
         rd <= Dataout;
         default: rd <= Dataout;
@@ -59,11 +59,11 @@ module datamemory #(
       case (Funct3)
         3'b000: begin  //SB
           Wr <= 4'b0001 << a[1:0];
-          Datain <= wd;
+          Datain <= (wd >> (a[1:0] * 8))[7:0];
         end
         3'b001: begin  //SH
-          Wr <= 4'b0011 << (a[1] * 2);
-          Datain <= wd;
+          Wr <= 4'b0011 << a[1:0];  
+          Datain <= (wd >> (a[1:0] * 8))[15:0];
         end
         3'b010: begin  //SW
           Wr <= 4'b1111;

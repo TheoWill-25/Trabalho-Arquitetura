@@ -15,22 +15,24 @@ module ALUController (
       ((ALUOp == 2'b01) && (Funct3 == 3'b001)) || // BNE
       ((ALUOp == 2'b01) && (Funct3 == 3'b101)) || // BGE
       ((ALUOp == 2'b10) && (Funct3 == 3'b001)) || // SLLI
-      ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000)); // SRAI
+      ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000)) || // SRAI
+      ((ALUOp == 2'b11)); // JAL/JALR
 
   assign Operation[1] = (ALUOp == 2'b00) ||  // load/store
       ((ALUOp == 2'b10) && (Funct3 == 3'b000)) ||  // ADD
       ((ALUOp == 2'b01) && (Funct3 == 3'b100)) || // BLT
       ((ALUOp == 2'b01) && (Funct3 == 3'b101)) || // BGE
       ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) || // SRLI
-      ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000));  // SRAI
+      ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000)) || // SRAI
+      ((ALUOp == 2'b11)); // JAL/JALR
 
   assign Operation[2] = ((ALUOp == 2'b10) && (Funct3 == 3'b000) && (Funct7 == 7'b0100000)) || // SUB
       ((ALUOp == 2'b10) && (Funct3 == 3'b100)) || // XOR
       ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0100000)) ||  // SRAI
       ((ALUOp == 2'b10) && (Funct3 == 3'b001)) || // SLLI
       ((ALUOp == 2'b10) && (Funct3 == 3'b101) && (Funct7 == 7'b0000000)) || // SRLI
-      ((ALUOp == 2'b10) && (Funct3 == 3'b010));  // SLTI/SLT
-      
+      ((ALUOp == 2'b10) && (Funct3 == 3'b010)) ||  // SLTI/SLT
+      ((ALUOp == 2'b11) && (Funct3 == 3'b000)); // JALR
 
   assign Operation[3] = (ALUOp == 2'b01) ||  // BEQ/BNE/BLT/BGE
       ((ALUOp == 2'b10) && (Funct3 == 3'b001)) || // SSLI
@@ -42,11 +44,11 @@ endmodule
 0000 = AND
 0001 = OR
 0010 = ADD/ADDI
-0011 
+0011 = JAL
 0100 = SLTI/SLT
 0101 = XOR
 0110 = SUB
-0111
+0111 = JALR
 1000 = BEQ/equal
 1001 = BNE
 1010 = BLT
