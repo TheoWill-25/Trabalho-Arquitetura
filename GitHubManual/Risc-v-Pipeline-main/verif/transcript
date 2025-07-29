@@ -6479,3 +6479,1750 @@ do runtb_top
 # ** Note: $stop    : ./tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv failed with 1 errors.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 2 failed with 2 errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 1 failed with 1 error.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Error 31: Unable to unlink file "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:39:41 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 17:39:41 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:39:42 on Jul 29,2025, Elapsed time: 1:14:01
+# Errors: 0, Warnings: 7
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 17:39:42 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftek7h8s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftek7h8s
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:50:45 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 17:50:45 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:50:46 on Jul 29,2025, Elapsed time: 0:11:04
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 17:50:46 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftfb75iv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfb75iv
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:57:57 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 17:57:57 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:57:59 on Jul 29,2025, Elapsed time: 0:07:13
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 17:57:59 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftnr041d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnr041d
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:01:36 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:01:36 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:01:38 on Jul 29,2025, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:01:38 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftjkw0c0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjkw0c0
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv failed with 3 errors.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 1 failed with 3 errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:37 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:11:37 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:11:39 on Jul 29,2025, Elapsed time: 0:10:01
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:11:39 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlft5byvre".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5byvre
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:19:55 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:19:55 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:19:56 on Jul 29,2025, Elapsed time: 0:08:17
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:19:56 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftta5j0w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftta5j0w
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock0/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock1/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock2/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock3/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Error 31: Unable to unlink file "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:36:10 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:36:10 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:36:11 on Jul 29,2025, Elapsed time: 0:16:15
+# Errors: 0, Warnings: 8
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:36:11 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlft8gwmzr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8gwmzr
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock0/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock1/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock2/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "instruction.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : $MODEL_TECH/../altera/verilog/src/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/instr_mem/meminst/memBlock3/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read instruction.mif.
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:40:29 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:40:29 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:40:30 on Jul 29,2025, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 8
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:40:30 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftbskz7f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbskz7f
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+#                   65: Register [ 4] written with value: [00000004] | [         4]
+# 
+#                   75: Register [ 6] written with value: [00000008] | [         8]
+# 
+#                   95: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  105: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  145: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  155: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  195: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  205: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  245: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  255: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  295: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  305: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  345: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  355: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  395: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  405: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  445: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  455: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  495: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  505: Register [ 8] written with value: [00000002] | [         2]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:42:41 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:42:41 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:42:43 on Jul 29,2025, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 3
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:42:43 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlft8ntzma".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8ntzma
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+#                   75: Register [ 4] written with value: [00000004] | [         4]
+# 
+#                   85: Register [ 6] written with value: [00000008] | [         8]
+# 
+#                   95: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  105: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  145: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  155: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  195: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  205: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  245: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  255: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  295: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  305: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  345: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  355: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  395: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  405: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  445: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  455: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  495: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  505: Register [ 8] written with value: [00000002] | [         2]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:46:15 on Jul 29,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 18:46:15 on Jul 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:46:16 on Jul 29,2025, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 18:46:17 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftvxxn6g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvxxn6g
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                   55: Register [ 2] written with value: [00000004] | [         4]
+# 
+#                   75: Register [ 4] written with value: [00000004] | [         4]
+# 
+#                   85: Register [ 6] written with value: [00000008] | [         8]
+# 
+#                   95: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  105: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  145: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  155: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  195: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  205: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  245: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  255: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  295: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  305: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  345: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  355: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  395: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  405: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  445: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  455: Register [ 8] written with value: [00000002] | [         2]
+# 
+#                  495: Register [ 7] written with value: [00000001] | [         1]
+# 
+#                  505: Register [ 8] written with value: [00000002] | [         2]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43

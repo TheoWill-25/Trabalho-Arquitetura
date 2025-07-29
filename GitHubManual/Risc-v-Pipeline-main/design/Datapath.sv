@@ -45,6 +45,7 @@ module Datapath #(
   logic [DATA_W-1:0] SrcB, ALUResult;
   logic [DATA_W-1:0] ExtImm, BrImm, Old_PC_Four, BrPC;
   logic [DATA_W-1:0] WrmuxSrc;
+  logic [DATA_W-1:0] WrmuxSrc1;  // jalr MUX
   logic PcSel;  // mux select / flush signal
   logic [1:0] FAmuxSel;
   logic [1:0] FBmuxSel;
@@ -139,6 +140,7 @@ module Datapath #(
       B.RegWrite <= 0;
       B.MemRead <= 0;
       B.MemWrite <= 0;
+      B.RWSel <= 0;
       B.ALUOp <= 0;
       B.Branch <= 0;
       B.Curr_Pc <= 0;
@@ -157,6 +159,7 @@ module Datapath #(
       B.RegWrite <= RegWrite;
       B.MemRead <= MemRead;
       B.MemWrite <= MemWrite;
+      B.RWSel <= (A.Curr_Instr[6:0] == 7'b1101111) || (A.Curr_Instr[6:0] == 7'b1100111);
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
       B.Curr_Pc <= A.Curr_Pc;
@@ -220,7 +223,7 @@ module Datapath #(
   BranchUnit #(9) brunit ( 
       B.Curr_Pc,
       B.ImmG,
-      B.Branch,
+      B.Branch || (B.ALUOp == 2'b11),
       ALUResult,
       BrImm,
       Old_PC_Four,
@@ -236,6 +239,7 @@ module Datapath #(
       C.MemtoReg <= 0;
       C.MemRead <= 0;
       C.MemWrite <= 0;
+      C.RWSel <= 0;
       C.Pc_Imm <= 0;
       C.Pc_Four <= 0;
       C.Imm_Out <= 0;
@@ -249,6 +253,7 @@ module Datapath #(
       C.MemtoReg <= B.MemtoReg;
       C.MemRead <= B.MemRead;
       C.MemWrite <= B.MemWrite;
+      C.RWSel <= B.RWSel;
       C.Pc_Imm <= BrImm;
       C.Pc_Four <= Old_PC_Four;
       C.Imm_Out <= B.ImmG;
@@ -284,6 +289,7 @@ module Datapath #(
         begin
       D.RegWrite <= 0;
       D.MemtoReg <= 0;
+      D.RWSel <= 0;
       D.Pc_Imm <= 0;
       D.Pc_Four <= 0;
       D.Imm_Out <= 0;
@@ -293,6 +299,7 @@ module Datapath #(
     end else begin
       D.RegWrite <= C.RegWrite;
       D.MemtoReg <= C.MemtoReg;
+      D.RWSel <= C.RWSel;
       D.Pc_Imm <= C.Pc_Imm;
       D.Pc_Four <= C.Pc_Four;
       D.Imm_Out <= C.Imm_Out;
@@ -311,6 +318,13 @@ module Datapath #(
       WrmuxSrc
   );
 
-  assign WB_Data = WrmuxSrc;
+  mux2 #(32) wrsmux (
+      WrmuxSrc,
+      D.Pc_Four,
+      D.RWSel,
+      WrmuxSrc1
+  );
+
+  assign WB_Data = WrmuxSrc1;
 
 endmodule

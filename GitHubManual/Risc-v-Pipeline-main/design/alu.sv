@@ -21,12 +21,16 @@ module alu#(
                     ALUResult = SrcA | SrcB;
             4'b0010:        // ADD/ADDI
                     ALUResult = SrcA + SrcB;
+            4'b0011:        //JAL
+                    ALUResult = 1; 
             4'b0100:        // SLT/SLTI
                     ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
             4'b0101:        // XOR
                     ALUResult = SrcA^SrcB;
             4'b0110:        // SUB
                     ALUResult = SrcA - SrcB;
+            4'b0111:        // JALR
+                    ALUResult = SrcA + SrcB;
             4'b1000:        // Equal
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
             4'b1001:        // BNE
@@ -46,4 +50,22 @@ module alu#(
             endcase
         end
 endmodule
+/*
+0000 = AND
+0001 = OR
+0010 = ADD/ADDI
+0011 = JAL
+0100 = SLTI/SLT
+0101 = XOR
+0110 = SUB
+0111 = JALR
+1000 = BEQ/equal
+1001 = BNE
+1010 = BLT
+1011 = BGE
+1100
+1101 = SLLI
+1110 = SRLI
+1111 = SRAI
+*/
 
