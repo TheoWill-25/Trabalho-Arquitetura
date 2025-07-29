@@ -18,8 +18,7 @@ module datamemory #(
   logic [31:0] Datain;
   logic [31:0] Dataout;
   logic [ 3:0] Wr;
-  logic [31:0] DeslocB;
-  logic [31:0] DeslocH;
+  logic [31:0] StrippedByte;
 
   Memoria32Data mem32 (
       .raddress(raddress),
@@ -31,7 +30,7 @@ module datamemory #(
   );
 
   always_ff @(*) begin
-    raddress = {{22{1'b0}}, a};
+    raddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}};
     waddress = {{22{1'b0}}, {a[8:2], {2{1'b0}}}};
     Datain = wd;
     Wr = 4'b0000;
@@ -50,7 +49,7 @@ module datamemory #(
         else if(a[1:0] == 2'b11) rd <= Dataout[31:24];
         3'b001:   //LH
         if(a[1:0] == 2'b00) rd <= $signed(Dataout[15:0]);
-        else if(a[1:0] == 2'b10) rd <= $signed(Dataout[31:16]);
+        else rd <= $signed(Dataout[31:16]);
         3'b010:  //LW
         rd <= Dataout;
         default: rd <= Dataout;
@@ -59,11 +58,18 @@ module datamemory #(
       case (Funct3)
         3'b000: begin  //SB
           Wr <= 4'b0001 << a[1:0];
-          Datain <= (wd >> (a[1:0] * 8))[7:0];
+          if(a[1:0] == 2'b00) Datain[7:0] <= $signed(wd[7:0]);
+          else if(a[1:0] == 2'b01) Datain[15:8] <= $signed(wd[7:0]);
+          else if(a[1:0] == 2'b10) Datain[23:16] <= $signed(wd[7:0]);
+          else if(a[1:0] == 2'b11) Datain[31:24] <= $signed(wd[7:0]);
+      
         end
         3'b001: begin  //SH
-          Wr <= 4'b0011 << a[1:0];  
-          Datain <= (wd >> (a[1:0] * 8))[15:0];
+          Wr <= 4'b0011 << a[1:0];
+          if(a[1:0] == 2'b00) Datain[15:0] <= $signed(wd[15:0]);
+          else if(a[1:0] == 2'b01) Datain[23:8] <= $signed(wd[15:0]);
+          else if(a[1:0] == 2'b10) Datain[31:16] <= $signed(wd[15:0]);
+          else if(a[1:0] == 2'b11) Datain[31:24] <= $signed(wd[15:0]);
         end
         3'b010: begin  //SW
           Wr <= 4'b1111;

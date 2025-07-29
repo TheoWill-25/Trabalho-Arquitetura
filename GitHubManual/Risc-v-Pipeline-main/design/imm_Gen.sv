@@ -27,7 +27,7 @@ module imm_Gen (
         1'b0
       };
 
-      7'b1101111:  /*J-type*/JAL
+      7'b1101111:  /*J-type*/
       Imm_out = {
         inst_code[31] ? 11'hFFF : 11'b0,
         inst_code[31],
@@ -35,9 +35,9 @@ module imm_Gen (
         inst_code[20],
         inst_code[30:21],
         1'b0 ///testar
-      }
+      };
 
-      7'b1100111:  /*J-type*/JALR
+      7'b1100111:  /*J-type*/
       Imm_out = {
         inst_code[31] ? 11'hFFF : 11'b0,
         inst_code[31],
@@ -45,7 +45,7 @@ module imm_Gen (
         inst_code[20],
         inst_code[30:21],
         1'b0  ///testar
-      }
+      };
 
       default: Imm_out = {32'b0};
 
