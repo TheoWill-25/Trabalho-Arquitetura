@@ -3,6 +3,7 @@ package Pipe_Buf_Reg_PKG;
   typedef struct packed {
     logic [8:0]  Curr_Pc;
     logic [31:0] Curr_Instr;
+    logic        Halt_detect;
   } if_id_reg;
 
   // Reg B
@@ -25,6 +26,8 @@ package Pipe_Buf_Reg_PKG;
     logic [2:0]  func3;
     logic [6:0]  func7;
     logic [31:0] Curr_Instr;
+    logic        Halt_detect;
+    logic        Jal;
   } id_ex_reg;
 
   // Reg C
@@ -43,6 +46,7 @@ package Pipe_Buf_Reg_PKG;
     logic [2:0]  func3;
     logic [6:0]  func7;
     logic [31:0] Curr_Instr;
+    logic        Halt_detect;
   } ex_mem_reg;
 
   // Reg D
@@ -57,5 +61,6 @@ package Pipe_Buf_Reg_PKG;
     logic [31:0] MemReadData;
     logic [4:0]  rd;
     logic [31:0] Curr_Instr;
+    logic        Halt_detect;
   } mem_wb_reg;
 endpackage

@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1753825575
+Z2 !s110 1753905783
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +19,7 @@ IZ:4UR3bSaIa;]mF0d9zbS1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1753812235
+Z5 w1753891586
 8./../design/adder.sv
 F./../design/adder.sv
 !i122 0
@@ -28,7 +28,7 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1753825575.000000
+Z8 !s108 1753905783.000000
 !s107 ./tb_top.sv|./../design/RISC_V.sv|./../design/Datapath.sv|./../design/instructionmemory.sv|./../design/datamemory.sv|./../design/mux4.sv|./../design/mux2.sv|./../design/imm_Gen.sv|./../design/HazardDetection.sv|./../design/ForwardingUnit.sv|./../design/flopr.sv|./../design/Controller.sv|./../design/BranchUnit.sv|./../design/ALUController.sv|./../design/alu.sv|./../design/RegFile.sv|./../design/RegPack.sv|./../design/Memoria32Data.sv|./../design/Memoria32.sv|./../design/ramOnChipData.v|./../design/ramOnChip32.v|./../design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -37,17 +37,17 @@ valu
 R1
 R2
 !i10b 1
-!s100 03RjKE<RTN<E933L`ofAg0
+!s100 Uoi2Ifd`ZPoGl[BZgU;EX0
 R3
-I3kmfK_RDCz[fcecCzCW@d2
+ImKzi7O?TMHWR3dFUkVa>X2
 R4
 S1
 R0
-w1753821367
+w1753905037
 8./../design/alu.sv
 F./../design/alu.sv
 !i122 0
-L0 3 50
+L0 3 48
 R7
 r1
 !s85 0
@@ -61,13 +61,13 @@ vALUController
 R1
 R2
 !i10b 1
-!s100 hYn:7^LdgWQfo`Y]WXiVL0
+!s100 jaezgnW@;S1U_mjCRZ2=k1
 R3
-I@kBIAEGHlAIBMHhWBGKPM0
+IdNC7YTBh_KZDB]ENTKdO<1
 R4
 S1
 R0
-w1753823481
+w1753905043
 8./../design/ALUController.sv
 F./../design/ALUController.sv
 !i122 0
@@ -86,17 +86,17 @@ vBranchUnit
 R1
 R2
 !i10b 1
-!s100 ?WzOGo;CO>A6AE?SNLP<H0
+!s100 S`7Y59mgfg<2T9TkO2?3[2
 R3
-IKdP]eP<4Dj1l[G`1fc8LD3
+I?h_gH?6FJHD;eB;WXh3900
 R4
 S1
 R0
-w1753825566
+w1753905221
 8./../design/BranchUnit.sv
 F./../design/BranchUnit.sv
 !i122 0
-L0 3 26
+L0 3 28
 R7
 r1
 !s85 0
@@ -111,17 +111,17 @@ vController
 R1
 R2
 !i10b 1
-!s100 a_9[MTG>b[LJ=;Zb_7NJo2
+!s100 7QlRO3ZzO<:;z085H>A012
 R3
-IaVV6bg5S=Ao:K0_khDf@d1
+I6G76zS[ol06bI9dFiH8SG3
 R4
 S1
 R0
-w1753823482
+w1753905064
 8./../design/Controller.sv
 F./../design/Controller.sv
 !i122 0
-L0 3 37
+L0 3 40
 R7
 r1
 !s85 0
@@ -142,7 +142,7 @@ Ij_1lFSNnlWf_HF_RHF]630
 R4
 S1
 R0
-w1753816961
+w1753891589
 8./../design/datamemory.sv
 F./../design/datamemory.sv
 !i122 0
@@ -158,23 +158,23 @@ R9
 R10
 vDatapath
 R1
-Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 X<]c6oz6o@e5[JSiC]B>00
-DXx4 work 16 Datapath_sv_unit 0 22 C9ATE7:zDgU`:iN5@WZ^U0
+Z12 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 OLF=Gle9JV@FazN6;eG8c2
+DXx4 work 16 Datapath_sv_unit 0 22 L?cz^oJ196liaMNBl>DOK3
 R2
 R4
 r1
 !s85 0
 !i10b 1
-!s100 l[>SfhVlU_@EObl_VNgLU0
-IFUZF;F1`>K:KHQ>M72f6V0
+!s100 IG?3J887h[<fIlYRHT8Cn2
+I`ggLUoTb>F_>i`9jfmeS43
 !s105 Datapath_sv_unit
 S1
 R0
-Z13 w1753823978
+Z13 w1753905205
 Z14 8./../design/Datapath.sv
 Z15 F./../design/Datapath.sv
 !i122 0
-L0 5 326
+L0 5 339
 R7
 31
 R8
@@ -187,12 +187,12 @@ XDatapath_sv_unit
 R1
 R12
 R2
-VC9ATE7:zDgU`:iN5@WZ^U0
+VL?cz^oJ196liaMNBl>DOK3
 r1
 !s85 0
 !i10b 1
-!s100 jOe08`D]Xl0JjbQW<J3oi1
-IC9ATE7:zDgU`:iN5@WZ^U0
+!s100 SB:1_fjJ_UOkk8?G_`LRn0
+IL?cz^oJ196liaMNBl>DOK3
 !i103 1
 S1
 R0
@@ -287,17 +287,17 @@ vimm_Gen
 R1
 R2
 !i10b 1
-!s100 FonPj?619_g0dSdEad5Sa1
+!s100 GDBEHSa18N`9RN7VZFVJ=2
 R3
-IBW?2JAiOUW>Wni90eTAkc1
+I[`7YQ^`a?HizZH[h6h?E:0
 R4
 S1
 R0
-w1753824954
+w1753904515
 8./../design/imm_Gen.sv
 F./../design/imm_Gen.sv
 !i122 0
-L0 3 47
+L0 3 45
 R7
 r1
 !s85 0
@@ -434,13 +434,13 @@ XPipe_Buf_Reg_PKG
 R1
 R2
 !i10b 1
-!s100 k`En[EK:Xbm0=[SJV3RBf0
+!s100 Bg:7^aHBZW[Z;doK]2d>51
 R3
-IX<]c6oz6o@e5[JSiC]B>00
-VX<]c6oz6o@e5[JSiC]B>00
+IOLF=Gle9JV@FazN6;eG8c2
+VOLF=Gle9JV@FazN6;eG8c2
 S1
 R0
-w1753823478
+w1753905227
 8./../design/RegPack.sv
 F./../design/RegPack.sv
 !i122 0
@@ -530,17 +530,17 @@ vriscv
 R1
 R2
 !i10b 1
-!s100 ZG:[k5[V9?jY[REj7dU`m2
+!s100 B8WS4joU0W]BX0=VhjQZY3
 R3
-IK5EVZNgoTohkMi>bSKaDR1
+IV^P?2`GIBS4@0[eGKKT^^0
 R4
 S1
 R0
-w1753823479
+w1753905265
 8./../design/RISC_V.sv
 F./../design/RISC_V.sv
 !i122 0
-L0 3 71
+L0 3 75
 R7
 r1
 !s85 0

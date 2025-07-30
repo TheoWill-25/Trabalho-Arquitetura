@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+ `timescale 1ns / 1ps
 
 module alu#(
         parameter DATA_WIDTH = 32,
@@ -22,15 +22,13 @@ module alu#(
             4'b0010:        // ADD/ADDI
                     ALUResult = SrcA + SrcB;
             4'b0011:        //JAL
-                    ALUResult = 1; 
+                    ALUResult = SrcA + SrcB;
             4'b0100:        // SLT/SLTI
                     ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
             4'b0101:        // XOR
                     ALUResult = SrcA^SrcB;
             4'b0110:        // SUB
                     ALUResult = SrcA - SrcB;
-            4'b0111:        // JALR
-                    ALUResult = SrcA + SrcB;
             4'b1000:        // Equal
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
             4'b1001:        // BNE
