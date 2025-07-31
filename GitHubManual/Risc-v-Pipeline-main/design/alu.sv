@@ -21,6 +21,11 @@ module alu#(
                     ALUResult = SrcA | SrcB;
             4'b0010:        // ADD/ADDI
                     ALUResult = SrcA + SrcB;
+<<<<<<< Updated upstream
+=======
+            4'b0011:        //JALR
+                    ALUResult = SrcA + SrcB;
+>>>>>>> Stashed changes
             4'b0100:        // SLT/SLTI
                     ALUResult = (SrcA < SrcB) ? 1 : 0;
             4'b0101:        // XOR

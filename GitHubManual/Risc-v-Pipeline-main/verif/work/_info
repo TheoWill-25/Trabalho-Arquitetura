@@ -11,7 +11,11 @@ cModel Technology
 Z0 dD:/Users/twrf/Documents/GitHub/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+<<<<<<< Updated upstream
 Z2 !s110 1751974114
+=======
+Z2 !s110 1753984673
+>>>>>>> Stashed changes
 !i10b 1
 !s100 J@Bf42a<9Q9R;nJSZl2>B2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,7 +23,11 @@ IZ:4UR3bSaIa;]mF0d9zbS1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
+<<<<<<< Updated upstream
 Z5 w1751971366
+=======
+Z5 w1753979547
+>>>>>>> Stashed changes
 8./../design/adder.sv
 F./../design/adder.sv
 !i122 0
@@ -28,7 +36,11 @@ Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
+<<<<<<< Updated upstream
 Z8 !s108 1751974114.000000
+=======
+Z8 !s108 1753984673.000000
+>>>>>>> Stashed changes
 !s107 ./tb_top.sv|./../design/RISC_V.sv|./../design/Datapath.sv|./../design/instructionmemory.sv|./../design/datamemory.sv|./../design/mux4.sv|./../design/mux2.sv|./../design/imm_Gen.sv|./../design/HazardDetection.sv|./../design/ForwardingUnit.sv|./../design/flopr.sv|./../design/Controller.sv|./../design/BranchUnit.sv|./../design/ALUController.sv|./../design/alu.sv|./../design/RegFile.sv|./../design/RegPack.sv|./../design/Memoria32Data.sv|./../design/Memoria32.sv|./../design/ramOnChipData.v|./../design/ramOnChip32.v|./../design/adder.sv|
 Z9 !s90 -reportprogress|300|-f|compile_verilog|
 !i113 1
@@ -43,7 +55,11 @@ Ih;c4CojESal9<S3>GbcjX0
 R4
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+w1753982587
+>>>>>>> Stashed changes
 8./../design/alu.sv
 F./../design/alu.sv
 !i122 0
@@ -67,7 +83,11 @@ II[2k55WLZKlJXL?UJKSH73
 R4
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+Z12 w1753979566
+>>>>>>> Stashed changes
 8./../design/ALUController.sv
 F./../design/ALUController.sv
 !i122 0
@@ -86,6 +106,7 @@ vBranchUnit
 R1
 R2
 !i10b 1
+<<<<<<< Updated upstream
 !s100 6mfj04GQ4<NdfP3N3I?:l2
 R3
 IaMaAS@o[?Z0EK3hi9_B5_1
@@ -93,6 +114,15 @@ R4
 S1
 R0
 R5
+=======
+!s100 [XJn078JV5jF@LKFz9DTF3
+R3
+IAJ=5zi=jc^d_WQI[[EHHh2
+R4
+S1
+R0
+w1753982582
+>>>>>>> Stashed changes
 8./../design/BranchUnit.sv
 F./../design/BranchUnit.sv
 !i122 0
@@ -117,7 +147,11 @@ I7T@Kc6D[LG>fY6]Zlm?UH3
 R4
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 8./../design/Controller.sv
 F./../design/Controller.sv
 !i122 0
@@ -142,7 +176,11 @@ I9omj[enZ`o9BjfP37EobG1
 R4
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 8./../design/datamemory.sv
 F./../design/datamemory.sv
 !i122 0
@@ -158,13 +196,19 @@ R9
 R10
 vDatapath
 R1
+<<<<<<< Updated upstream
 Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 CP`NR8^c2NX`Y1z<Jz9aB2
 DXx4 work 16 Datapath_sv_unit 0 22 gK[1QCkf2n5n=M6K0GhRR3
+=======
+Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 OLF=Gle9JV@FazN6;eG8c2
+DXx4 work 16 Datapath_sv_unit 0 22 A;LW<@oF5SVK^@nhTNL4:0
+>>>>>>> Stashed changes
 R2
 R4
 r1
 !s85 0
 !i10b 1
+<<<<<<< Updated upstream
 !s100 cWkHWmncDlQL`5?j6eNGC1
 I[FcU4Z6AKg`kEhYdYRGFS2
 !s105 Datapath_sv_unit
@@ -175,6 +219,18 @@ Z14 8./../design/Datapath.sv
 Z15 F./../design/Datapath.sv
 !i122 0
 L0 5 312
+=======
+!s100 OfZe=h:LW6R^am4n4IOfM0
+Ig1mOd9c=j;hgEoOk<469c0
+!s105 Datapath_sv_unit
+S1
+R0
+Z14 w1753984000
+Z15 8./../design/Datapath.sv
+Z16 F./../design/Datapath.sv
+!i122 0
+L0 5 349
+>>>>>>> Stashed changes
 R7
 31
 R8
@@ -187,6 +243,7 @@ XDatapath_sv_unit
 R1
 R13
 R2
+<<<<<<< Updated upstream
 VgK[1QCkf2n5n=M6K0GhRR3
 r1
 !s85 0
@@ -197,8 +254,20 @@ IgK[1QCkf2n5n=M6K0GhRR3
 S1
 R0
 R5
+=======
+VA;LW<@oF5SVK^@nhTNL4:0
+r1
+!s85 0
+!i10b 1
+!s100 dVF0A^7?Q3[kH4_<o_lkf0
+IA;LW<@oF5SVK^@nhTNL4:0
+!i103 1
+S1
+R0
+>>>>>>> Stashed changes
 R14
 R15
+R16
 !i122 0
 L0 3 0
 R7
@@ -293,7 +362,11 @@ I0XPWEiLF[NC7?naPIR9U:2
 R4
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 8./../design/imm_Gen.sv
 F./../design/imm_Gen.sv
 !i122 0
@@ -346,7 +419,7 @@ R5
 8./../design/Memoria32.sv
 F./../design/Memoria32.sv
 !i122 0
-Z16 L0 26 94
+Z17 L0 26 94
 R7
 r1
 !s85 0
@@ -371,7 +444,7 @@ R5
 8./../design/Memoria32Data.sv
 F./../design/Memoria32Data.sv
 !i122 0
-R16
+R17
 R7
 r1
 !s85 0
@@ -440,7 +513,11 @@ ICP`NR8^c2NX`Y1z<Jz9aB2
 VCP`NR8^c2NX`Y1z<Jz9aB2
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+w1753983138
+>>>>>>> Stashed changes
 8./../design/RegPack.sv
 F./../design/RegPack.sv
 !i122 0
@@ -467,7 +544,7 @@ R5
 8./../design/ramOnChip32.v
 F./../design/ramOnChip32.v
 !i122 0
-Z17 L0 40 78
+Z18 L0 40 78
 R7
 r1
 !s85 0
@@ -490,7 +567,7 @@ R5
 8./../design/ramOnChipData.v
 F./../design/ramOnChipData.v
 !i122 0
-R17
+R18
 R7
 r1
 !s85 0
@@ -536,7 +613,11 @@ IK5EVZNgoTohkMi>bSKaDR1
 R4
 S1
 R0
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 8./../design/RISC_V.sv
 F./../design/RISC_V.sv
 !i122 0
