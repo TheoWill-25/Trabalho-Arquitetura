@@ -19,6 +19,7 @@ f0
 ff
 @4
 23
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 @5
 20
@@ -26,6 +27,19 @@ ff
 <<<<<<< Updated upstream
 22
 @7
+=======
+@5
+20
+@6
+70
+@7
+00
+@8
+83
+@9
+24
+@a
+>>>>>>> Stashed changes
 00
 @8
 33
@@ -44,8 +58,11 @@ ff
 41
 @b
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 00
 =======
+=======
+>>>>>>> Stashed changes
 00
 @c
 33
@@ -71,4 +88,7 @@ ff
 c0
 @17
 00
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

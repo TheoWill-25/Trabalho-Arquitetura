@@ -12,7 +12,11 @@ Z0 dD:/Users/twrf/Documents/GitHub/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipe
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Z2 !s110 1751974114
+=======
+Z2 !s110 1753984673
+>>>>>>> Stashed changes
 =======
 Z2 !s110 1753984673
 >>>>>>> Stashed changes
@@ -24,7 +28,11 @@ Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Z5 w1751971366
+=======
+Z5 w1753979547
+>>>>>>> Stashed changes
 =======
 Z5 w1753979547
 >>>>>>> Stashed changes
@@ -37,7 +45,11 @@ r1
 !s85 0
 31
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Z8 !s108 1751974114.000000
+=======
+Z8 !s108 1753984673.000000
+>>>>>>> Stashed changes
 =======
 Z8 !s108 1753984673.000000
 >>>>>>> Stashed changes
@@ -56,7 +68,11 @@ R4
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+w1753982587
+>>>>>>> Stashed changes
 =======
 w1753982587
 >>>>>>> Stashed changes
@@ -84,7 +100,11 @@ R4
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+Z12 w1753979566
+>>>>>>> Stashed changes
 =======
 Z12 w1753979566
 >>>>>>> Stashed changes
@@ -107,6 +127,7 @@ R1
 R2
 !i10b 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 !s100 6mfj04GQ4<NdfP3N3I?:l2
 R3
 IaMaAS@o[?Z0EK3hi9_B5_1
@@ -114,6 +135,15 @@ R4
 S1
 R0
 R5
+=======
+!s100 [XJn078JV5jF@LKFz9DTF3
+R3
+IAJ=5zi=jc^d_WQI[[EHHh2
+R4
+S1
+R0
+w1753982582
+>>>>>>> Stashed changes
 =======
 !s100 [XJn078JV5jF@LKFz9DTF3
 R3
@@ -148,7 +178,11 @@ R4
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 =======
 R12
 >>>>>>> Stashed changes
@@ -177,7 +211,11 @@ R4
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 =======
 R12
 >>>>>>> Stashed changes
@@ -197,8 +235,13 @@ R10
 vDatapath
 R1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 CP`NR8^c2NX`Y1z<Jz9aB2
 DXx4 work 16 Datapath_sv_unit 0 22 gK[1QCkf2n5n=M6K0GhRR3
+=======
+Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 OLF=Gle9JV@FazN6;eG8c2
+DXx4 work 16 Datapath_sv_unit 0 22 A;LW<@oF5SVK^@nhTNL4:0
+>>>>>>> Stashed changes
 =======
 Z13 DXx4 work 16 Pipe_Buf_Reg_PKG 0 22 OLF=Gle9JV@FazN6;eG8c2
 DXx4 work 16 Datapath_sv_unit 0 22 A;LW<@oF5SVK^@nhTNL4:0
@@ -208,6 +251,7 @@ R4
 r1
 !s85 0
 !i10b 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 !s100 cWkHWmncDlQL`5?j6eNGC1
 I[FcU4Z6AKg`kEhYdYRGFS2
@@ -219,6 +263,18 @@ Z14 8./../design/Datapath.sv
 Z15 F./../design/Datapath.sv
 !i122 0
 L0 5 312
+=======
+!s100 OfZe=h:LW6R^am4n4IOfM0
+Ig1mOd9c=j;hgEoOk<469c0
+!s105 Datapath_sv_unit
+S1
+R0
+Z14 w1753984000
+Z15 8./../design/Datapath.sv
+Z16 F./../design/Datapath.sv
+!i122 0
+L0 5 349
+>>>>>>> Stashed changes
 =======
 !s100 OfZe=h:LW6R^am4n4IOfM0
 Ig1mOd9c=j;hgEoOk<469c0
@@ -244,6 +300,7 @@ R1
 R13
 R2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 VgK[1QCkf2n5n=M6K0GhRR3
 r1
 !s85 0
@@ -254,6 +311,17 @@ IgK[1QCkf2n5n=M6K0GhRR3
 S1
 R0
 R5
+=======
+VA;LW<@oF5SVK^@nhTNL4:0
+r1
+!s85 0
+!i10b 1
+!s100 dVF0A^7?Q3[kH4_<o_lkf0
+IA;LW<@oF5SVK^@nhTNL4:0
+!i103 1
+S1
+R0
+>>>>>>> Stashed changes
 =======
 VA;LW<@oF5SVK^@nhTNL4:0
 r1
@@ -363,7 +431,11 @@ R4
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 =======
 R12
 >>>>>>> Stashed changes
@@ -514,7 +586,11 @@ VCP`NR8^c2NX`Y1z<Jz9aB2
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+w1753983138
+>>>>>>> Stashed changes
 =======
 w1753983138
 >>>>>>> Stashed changes
@@ -614,7 +690,11 @@ R4
 S1
 R0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 R5
+=======
+R12
+>>>>>>> Stashed changes
 =======
 R12
 >>>>>>> Stashed changes

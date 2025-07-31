@@ -163,6 +163,9 @@ module Datapath #(
 =======
       B.Halt_detect <= 0;
       B.Jal <= 0;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end else begin

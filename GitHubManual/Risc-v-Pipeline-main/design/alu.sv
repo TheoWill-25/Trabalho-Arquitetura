@@ -22,7 +22,10 @@ module alu#(
             4'b0010:        // ADD/ADDI
                     ALUResult = SrcA + SrcB;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
             4'b0011:        //JALR
                     ALUResult = SrcA + SrcB;
 >>>>>>> Stashed changes
