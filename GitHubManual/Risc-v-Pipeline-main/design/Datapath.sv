@@ -39,7 +39,7 @@ module Datapath #(
     input logic Jal
 );
 
-  logic [PC_W-1:0] PC, PCPlus4, Next_PC;
+  logic [PC_W-1:0] PC, PCPlus4, Next_PC, Prov_PC;
   logic [INS_W-1:0] Instr;
   logic [DATA_W-1:0] Reg1, Reg2;
   logic [DATA_W-1:0] ReadData;
@@ -59,6 +59,7 @@ module Datapath #(
   id_ex_reg B;
   ex_mem_reg C;
   mem_wb_reg D;
+  
 
   // next PC
   adder #(9) pcadd (
@@ -66,12 +67,21 @@ module Datapath #(
       9'b100,
       PCPlus4
   );
+  
   mux2 #(9) pcmux (
       PCPlus4,
       BrPC[PC_W-1:0],
       PcSel,
-      Next_PC
+      Prov_PC
   );
+  
+  mux2 #(9) halt (
+      Prov_PC,
+      PC,
+      opcode == 7'b1111111,
+      Next_PC      
+  );
+
   flopr #(9) pcreg (
       clk,
       reset,
@@ -157,6 +167,7 @@ module Datapath #(
       B.func3 <= 0;
       B.func7 <= 0;
       B.Halt_detect <= 0;
+      B.Jal <= 0;
       B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end else begin
       B.ALUSrc <= ALUsrc;

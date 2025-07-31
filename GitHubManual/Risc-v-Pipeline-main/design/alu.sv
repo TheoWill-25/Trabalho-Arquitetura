@@ -21,7 +21,7 @@ module alu#(
                     ALUResult = SrcA | SrcB;
             4'b0010:        // ADD/ADDI
                     ALUResult = SrcA + SrcB;
-            4'b0011:        //JAL
+            4'b0011:        //JALR
                     ALUResult = SrcA + SrcB;
             4'b0100:        // SLT/SLTI
                     ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
