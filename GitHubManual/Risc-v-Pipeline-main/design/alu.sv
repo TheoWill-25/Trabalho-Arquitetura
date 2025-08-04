@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+ `timescale 1ns / 1ps
 
 module alu#(
         parameter DATA_WIDTH = 32,
@@ -21,16 +21,10 @@ module alu#(
                     ALUResult = SrcA | SrcB;
             4'b0010:        // ADD/ADDI
                     ALUResult = SrcA + SrcB;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
             4'b0011:        //JALR
                     ALUResult = SrcA + SrcB;
->>>>>>> Stashed changes
             4'b0100:        // SLT/SLTI
-                    ALUResult = (SrcA < SrcB) ? 1 : 0;
+                    ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
             4'b0101:        // XOR
                     ALUResult = SrcA^SrcB;
             4'b0110:        // SUB
@@ -54,4 +48,22 @@ module alu#(
             endcase
         end
 endmodule
+/*
+0000 = AND
+0001 = OR
+0010 = ADD/ADDI
+0011 = JAL
+0100 = SLTI/SLT
+0101 = XOR
+0110 = SUB
+0111 = JALR
+1000 = BEQ/equal
+1001 = BNE
+1010 = BLT
+1011 = BGE
+1100
+1101 = SLLI
+1110 = SRLI
+1111 = SRAI
+*/
 
