@@ -54,6 +54,7 @@ module Datapath #(
   logic [DATA_W-1:0] FAmux_Result;
   logic [DATA_W-1:0] FBmux_Result;
   logic Reg_Stall;  //1: PC fetch same, Register not update
+  logic Halt;
 
   if_id_reg A;
   id_ex_reg B;
@@ -72,21 +73,14 @@ module Datapath #(
       PCPlus4,
       BrPC[PC_W-1:0],
       PcSel,
-      Prov_PC
-  );
-  
-  mux2 #(9) halt (
-      Prov_PC,
-      PC,
-      opcode == 7'b1111111,
-      Next_PC      
+      Next_PC
   );
 
   flopr #(9) pcreg (
       clk,
       reset,
       Next_PC,
-      Reg_Stall,
+      Reg_Stall || Halt,
       PC
   );
   instructionmemory instr_mem (
@@ -119,6 +113,8 @@ module Datapath #(
       B.MemRead,
       Reg_Stall
   );
+
+  assign Halt = (Instr[6:0] == 7'b1111111);
 
   // //Register File
   assign opcode = A.Curr_Instr[6:0];

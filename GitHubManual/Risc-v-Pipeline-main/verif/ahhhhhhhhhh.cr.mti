@@ -1,10 +1,12 @@
-D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Datapath.sv {0 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Datapath.sv
+D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Datapath.sv {2 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Datapath.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Warning: D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Datapath.sv(3): (vlog-13233) Design unit "Datapath_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
 -- Compiling package Datapath_sv_unit
 -- Importing package Pipe_Buf_Reg_PKG
 -- Compiling module Datapath
-** Error (suppressible): (vlog-13276) D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Datapath.sv(180): Could not find field/method name (Jal) in 'B' of 'B.Jal'.
+
+Top level modules:
+	Datapath
 
 } {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Memoria32Data.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/Memoria32Data.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -62,6 +64,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	--none--
 
+} {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/RISC_V.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/RISC_V.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module riscv
+
+Top level modules:
+	riscv
+
 } {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/ALUController.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/ALUController.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module ALUController
@@ -104,19 +113,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	HazardDetection
 
-} {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/datamemory.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/datamemory.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module datamemory
-
-Top level modules:
-	datamemory
-
 } {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/flopr.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/flopr.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module flopr
 
 Top level modules:
 	flopr
+
+} {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/datamemory.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/datamemory.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datamemory
+
+Top level modules:
+	datamemory
 
 } {} {}} D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/BranchUnit.sv {1 {vlog -work work -sv -stats=none D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/design/BranchUnit.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
