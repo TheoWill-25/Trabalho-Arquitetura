@@ -18,3 +18,1322 @@
 # Compile of RegPack.sv was successful.
 # Compile of RISC_V.sv was successful.
 # 19 compiles, 0 failed with no errors.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:48 on Aug 13,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 14:42:48 on Aug 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 14:42:49 on Aug 13,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftda490j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftda490j
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                   55: Register [ 2] written with value: [fffffffd] | [4294967293]
+# 
+#                   65: Register [ 3] written with value: [0000000a] | [        10]
+# 
+#                   75: Register [ 4] written with value: [fffffffd] | [4294967293]
+# 
+#                   85: Register [ 5] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 6] written with value: [000000ff] | [       255]
+# 
+#                  165: Register [ 1] written with value: [fffffffd] | [4294967293]
+# 
+#                  185: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                  205: Register [ 7] written with value: [000000ff] | [       255]
+# 
+#                  215: Register [ 7] written with value: [00000003] | [         3]
+# 
+#                  235: Register [ 8] written with value: [000000ff] | [       255]
+# 
+#                  245: Register [ 8] written with value: [00000004] | [         4]
+# 
+#                  255: Register [ 9] written with value: [00000001] | [         1]
+# 
+#                  265: Register [10] written with value: [00000000] | [         0]
+# 
+#                  275: Register [11] written with value: [00000001] | [         1]
+# 
+#                  285: Register [12] written with value: [00000000] | [         0]
+# 
+#                  295: Register [13] written with value: [00000014] | [        20]
+# 
+#                  305: Register [14] written with value: [00000005] | [         5]
+# 
+#                  315: Register [15] written with value: [fffffffe] | [4294967294]
+# 
+#                  325: Register [16] written with value: [00000007] | [         7]
+# 
+#                  335: Register [17] written with value: [0000000d] | [        13]
+# 
+#                  345: Register [18] written with value: [fffffff7] | [4294967287]
+# 
+#                  355: Register [19] written with value: [ffffffff] | [4294967295]
+# 
+#                  365: Register [20] written with value: [00000008] | [         8]
+# 
+#                  375: Register [22] written with value: [00000040] | [        64]
+# 
+#                  385: Memory [ 64] written with value: [00000123] | [       291]
+# 
+#                  385: Register [23] written with value: [00000123] | [       291]
+# 
+#                  395: Memory [ 64] read with value: [xxxxxxxx] | [         x]
+# 
+#                  395: Memory [ 64] read with value: [00000000] | [         0]
+# 
+#                  400: Memory [ 64] read with value: [00000123] | [       291]
+# 
+#                  405: Register [24] written with value: [00000123] | [       291]
+# 
+#                  415: Memory [ 68] written with value: [000000ff] | [       255]
+# 
+#                  415: Register [25] written with value: [000000ff] | [       255]
+# 
+#                  425: Memory [ 68] read with value: [00000123] | [       291]
+# 
+#                  425: Memory [ 68] read with value: [00000000] | [         0]
+# 
+#                  430: Memory [ 68] read with value: [ffffffff] | [4294967295]
+# 
+#                  435: Register [26] written with value: [ffffffff] | [4294967295]
+# 
+#                  435: Memory [ 68] read with value: [000000ff] | [       255]
+# 
+#                  445: Register [27] written with value: [000000ff] | [       255]
+# 
+#                  455: Memory [ 72] written with value: [00000234] | [       564]
+# 
+#                  455: Register [28] written with value: [00000234] | [       564]
+# 
+#                  465: Memory [ 72] read with value: [000000ff] | [       255]
+# 
+#                  465: Memory [ 72] read with value: [00000000] | [         0]
+# 
+#                  470: Memory [ 72] read with value: [00000234] | [       564]
+# 
+#                  475: Register [29] written with value: [00000234] | [       564]
+# 
+#                  485: Register [30] written with value: [000000a4] | [       164]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of BranchUnit.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of datamemory.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of flopr.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of HazardDetection.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of Memoria32.sv was successful.
+# Compile of Memoria32Data.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 19 compiles, 0 failed with no errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Error 31: Unable to unlink file "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:49:32 on Aug 13,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 14:49:32 on Aug 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:49:33 on Aug 13,2025, Elapsed time: 0:06:44
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 14:49:33 on Aug 13,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlft0zqbwj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0zqbwj
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                   55: Register [ 2] written with value: [fffffffd] | [4294967293]
+# 
+#                   65: Register [ 3] written with value: [0000000a] | [        10]
+# 
+#                   75: Register [ 4] written with value: [fffffffd] | [4294967293]
+# 
+#                   85: Register [ 5] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 6] written with value: [000000ff] | [       255]
+# 
+#                  165: Register [ 1] written with value: [fffffffd] | [4294967293]
+# 
+#                  185: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                  225: Register [ 7] written with value: [00000003] | [         3]
+# 
+#                  265: Register [ 8] written with value: [00000004] | [         4]
+# 
+#                  275: Register [ 9] written with value: [00000001] | [         1]
+# 
+#                  285: Register [10] written with value: [00000000] | [         0]
+# 
+#                  295: Register [11] written with value: [00000001] | [         1]
+# 
+#                  305: Register [12] written with value: [00000000] | [         0]
+# 
+#                  315: Register [13] written with value: [00000014] | [        20]
+# 
+#                  325: Register [14] written with value: [00000005] | [         5]
+# 
+#                  335: Register [15] written with value: [fffffffe] | [4294967294]
+# 
+#                  345: Register [16] written with value: [00000007] | [         7]
+# 
+#                  355: Register [17] written with value: [0000000d] | [        13]
+# 
+#                  365: Register [18] written with value: [fffffff7] | [4294967287]
+# 
+#                  375: Register [19] written with value: [ffffffff] | [4294967295]
+# 
+#                  385: Register [20] written with value: [00000008] | [         8]
+# 
+#                  395: Register [22] written with value: [00000040] | [        64]
+# 
+#                  405: Memory [ 64] written with value: [00000123] | [       291]
+# 
+#                  405: Register [23] written with value: [00000123] | [       291]
+# 
+#                  415: Memory [ 64] read with value: [xxxxxxxx] | [         x]
+# 
+#                  415: Memory [ 64] read with value: [00000000] | [         0]
+# 
+#                  420: Memory [ 64] read with value: [00000123] | [       291]
+# 
+#                  425: Register [24] written with value: [00000123] | [       291]
+# 
+#                  435: Memory [ 68] written with value: [000000ff] | [       255]
+# 
+#                  435: Register [25] written with value: [000000ff] | [       255]
+# 
+#                  445: Memory [ 68] read with value: [00000123] | [       291]
+# 
+#                  445: Memory [ 68] read with value: [00000000] | [         0]
+# 
+#                  450: Memory [ 68] read with value: [ffffffff] | [4294967295]
+# 
+#                  455: Register [26] written with value: [ffffffff] | [4294967295]
+# 
+#                  455: Memory [ 68] read with value: [000000ff] | [       255]
+# 
+#                  465: Register [27] written with value: [000000ff] | [       255]
+# 
+#                  475: Memory [ 72] written with value: [00000234] | [       564]
+# 
+#                  475: Register [28] written with value: [00000234] | [       564]
+# 
+#                  485: Memory [ 72] read with value: [000000ff] | [       255]
+# 
+#                  485: Memory [ 72] read with value: [00000000] | [         0]
+# 
+#                  490: Memory [ 72] read with value: [00000234] | [       564]
+# 
+#                  495: Register [29] written with value: [00000234] | [       564]
+# 
+#                  505: Register [30] written with value: [000000a4] | [       164]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                   55: Register [ 2] written with value: [fffffffd] | [4294967293]
+# 
+#                   65: Register [ 3] written with value: [0000000a] | [        10]
+# 
+#                   75: Register [ 4] written with value: [fffffffd] | [4294967293]
+# 
+#                   85: Register [ 5] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 6] written with value: [000000ff] | [       255]
+# 
+#                  165: Register [ 1] written with value: [fffffffd] | [4294967293]
+# 
+#                  185: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                  225: Register [ 7] written with value: [00000003] | [         3]
+# 
+#                  265: Register [ 8] written with value: [00000004] | [         4]
+# 
+#                  275: Register [ 9] written with value: [00000001] | [         1]
+# 
+#                  285: Register [10] written with value: [00000000] | [         0]
+# 
+#                  295: Register [11] written with value: [00000001] | [         1]
+# 
+#                  305: Register [12] written with value: [00000000] | [         0]
+# 
+#                  315: Register [13] written with value: [00000014] | [        20]
+# 
+#                  325: Register [14] written with value: [00000005] | [         5]
+# 
+#                  335: Register [15] written with value: [fffffffe] | [4294967294]
+# 
+#                  345: Register [16] written with value: [00000007] | [         7]
+# 
+#                  355: Register [17] written with value: [0000000d] | [        13]
+# 
+#                  365: Register [18] written with value: [fffffff7] | [4294967287]
+# 
+#                  375: Register [19] written with value: [ffffffff] | [4294967295]
+# 
+#                  385: Register [20] written with value: [00000008] | [         8]
+# 
+#                  395: Register [22] written with value: [00000040] | [        64]
+# 
+#                  405: Memory [ 64] written with value: [00000123] | [       291]
+# 
+#                  405: Register [23] written with value: [00000123] | [       291]
+# 
+#                  415: Memory [ 64] read with value: [xxxxxxxx] | [         x]
+# 
+#                  415: Memory [ 64] read with value: [00000000] | [         0]
+# 
+#                  420: Memory [ 64] read with value: [00000123] | [       291]
+# 
+#                  425: Register [24] written with value: [00000123] | [       291]
+# 
+#                  435: Memory [ 68] written with value: [000000ff] | [       255]
+# 
+#                  435: Register [25] written with value: [000000ff] | [       255]
+# 
+#                  445: Memory [ 68] read with value: [00000123] | [       291]
+# 
+#                  445: Memory [ 68] read with value: [00000000] | [         0]
+# 
+#                  450: Memory [ 68] read with value: [ffffffff] | [4294967295]
+# 
+#                  455: Register [26] written with value: [ffffffff] | [4294967295]
+# 
+#                  455: Memory [ 68] read with value: [000000ff] | [       255]
+# 
+#                  465: Register [27] written with value: [000000ff] | [       255]
+# 
+#                  475: Memory [ 72] written with value: [00000234] | [       564]
+# 
+#                  475: Register [28] written with value: [00000234] | [       564]
+# 
+#                  485: Memory [ 72] read with value: [000000ff] | [       255]
+# 
+#                  485: Memory [ 72] read with value: [00000000] | [         0]
+# 
+#                  490: Memory [ 72] read with value: [00000234] | [       564]
+# 
+#                  495: Register [29] written with value: [00000234] | [       564]
+# 
+#                  505: Register [30] written with value: [000000a4] | [       164]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Error 31: Unable to unlink file "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/Users/twrf/Desktop/Trabalho-Arquitetura/GitHubManual/Risc-v-Pipeline-main/verif/work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:39:05 on Aug 13,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 15:39:06 on Aug 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:39:07 on Aug 13,2025, Elapsed time: 0:49:34
+# Errors: 0, Warnings: 1
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 15:39:07 on Aug 13,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftwnkf5q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwnkf5q
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 2] written with value: [000007ff] | [      2047]
+# 
+#                   55: Register [ 2] written with value: [00000400] | [      1024]
+# 
+#                   65: Register [30] written with value: [0000000c] | [        12]
+# 
+#                   95: Register [ 4] written with value: [ffffffff] | [4294967295]
+# 
+#                  105: Register [ 2] written with value: [fffffbff] | [4294966271]
+# 
+#                  115: Register [ 2] written with value: [000007ff] | [      2047]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:46:24 on Aug 13,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 15:46:24 on Aug 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:46:25 on Aug 13,2025, Elapsed time: 0:07:18
+# Errors: 0, Warnings: 3
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 15:46:25 on Aug 13,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftt1zzst".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt1zzst
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 2] written with value: [000007ff] | [      2047]
+# 
+#                   55: Register [ 2] written with value: [00000400] | [      1024]
+# 
+#                   65: Register [30] written with value: [0000000c] | [        12]
+# 
+#                   95: Register [ 4] written with value: [ffffffff] | [4294967295]
+# 
+#                  105: Register [ 2] written with value: [fffffbff] | [4294966271]
+# 
+#                  115: Register [ 2] written with value: [000007ff] | [      2047]
+# 
+#                  125: Register [ 0] written with value: [00000020] | [        32]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:53 on Aug 13,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 15:47:53 on Aug 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:47:55 on Aug 13,2025, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 3
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 15:47:55 on Aug 13,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: twrf  Hostname: HWC12  ProcessID: 10468
+#           Attempting to use alternate WLF file "./wlftt56485".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt56485
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                   55: Register [ 2] written with value: [fffffffd] | [4294967293]
+# 
+#                   65: Register [ 3] written with value: [0000000a] | [        10]
+# 
+#                   75: Register [ 4] written with value: [fffffffd] | [4294967293]
+# 
+#                   85: Register [ 5] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 6] written with value: [000000ff] | [       255]
+# 
+#                  165: Register [ 1] written with value: [fffffffd] | [4294967293]
+# 
+#                  185: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                  225: Register [ 7] written with value: [00000003] | [         3]
+# 
+#                  265: Register [ 8] written with value: [00000004] | [         4]
+# 
+#                  275: Register [ 9] written with value: [00000001] | [         1]
+# 
+#                  285: Register [10] written with value: [00000000] | [         0]
+# 
+#                  295: Register [11] written with value: [00000001] | [         1]
+# 
+#                  305: Register [12] written with value: [00000000] | [         0]
+# 
+#                  315: Register [13] written with value: [00000014] | [        20]
+# 
+#                  325: Register [14] written with value: [00000005] | [         5]
+# 
+#                  335: Register [15] written with value: [fffffffe] | [4294967294]
+# 
+#                  345: Register [16] written with value: [00000007] | [         7]
+# 
+#                  355: Register [17] written with value: [0000000d] | [        13]
+# 
+#                  365: Register [18] written with value: [fffffff7] | [4294967287]
+# 
+#                  375: Register [19] written with value: [ffffffff] | [4294967295]
+# 
+#                  385: Register [20] written with value: [00000008] | [         8]
+# 
+#                  395: Register [22] written with value: [00000040] | [        64]
+# 
+#                  405: Memory [ 64] written with value: [00000123] | [       291]
+# 
+#                  405: Register [23] written with value: [00000123] | [       291]
+# 
+#                  415: Memory [ 64] read with value: [xxxxxxxx] | [         x]
+# 
+#                  415: Memory [ 64] read with value: [00000000] | [         0]
+# 
+#                  420: Memory [ 64] read with value: [00000123] | [       291]
+# 
+#                  425: Register [24] written with value: [00000123] | [       291]
+# 
+#                  435: Memory [ 68] written with value: [000000ff] | [       255]
+# 
+#                  435: Register [25] written with value: [000000ff] | [       255]
+# 
+#                  445: Memory [ 68] read with value: [00000123] | [       291]
+# 
+#                  445: Memory [ 68] read with value: [00000000] | [         0]
+# 
+#                  450: Memory [ 68] read with value: [ffffffff] | [4294967295]
+# 
+#                  455: Register [26] written with value: [ffffffff] | [4294967295]
+# 
+#                  455: Memory [ 68] read with value: [000000ff] | [       255]
+# 
+#                  465: Register [27] written with value: [000000ff] | [       255]
+# 
+#                  475: Memory [ 72] written with value: [00000234] | [       564]
+# 
+#                  475: Register [28] written with value: [00000234] | [       564]
+# 
+#                  485: Memory [ 72] read with value: [000000ff] | [       255]
+# 
+#                  485: Memory [ 72] read with value: [00000000] | [         0]
+# 
+#                  490: Memory [ 72] read with value: [00000234] | [       564]
+# 
+#                  495: Register [29] written with value: [00000234] | [       564]
+# 
+#                  505: Register [30] written with value: [000000a4] | [       164]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                   55: Register [ 2] written with value: [fffffffd] | [4294967293]
+# 
+#                   65: Register [ 3] written with value: [0000000a] | [        10]
+# 
+#                   75: Register [ 4] written with value: [fffffffd] | [4294967293]
+# 
+#                   85: Register [ 5] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 6] written with value: [000000ff] | [       255]
+# 
+#                  165: Register [ 1] written with value: [fffffffd] | [4294967293]
+# 
+#                  185: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                  225: Register [ 7] written with value: [00000003] | [         3]
+# 
+#                  265: Register [ 8] written with value: [00000004] | [         4]
+# 
+#                  275: Register [ 9] written with value: [00000001] | [         1]
+# 
+#                  285: Register [10] written with value: [00000000] | [         0]
+# 
+#                  295: Register [11] written with value: [00000001] | [         1]
+# 
+#                  305: Register [12] written with value: [00000000] | [         0]
+# 
+#                  315: Register [13] written with value: [00000014] | [        20]
+# 
+#                  325: Register [14] written with value: [00000005] | [         5]
+# 
+#                  335: Register [15] written with value: [fffffffe] | [4294967294]
+# 
+#                  345: Register [16] written with value: [00000007] | [         7]
+# 
+#                  355: Register [17] written with value: [0000000d] | [        13]
+# 
+#                  365: Register [18] written with value: [fffffff7] | [4294967287]
+# 
+#                  375: Register [19] written with value: [ffffffff] | [4294967295]
+# 
+#                  385: Register [20] written with value: [00000008] | [         8]
+# 
+#                  395: Register [22] written with value: [00000040] | [        64]
+# 
+#                  405: Memory [ 64] written with value: [00000123] | [       291]
+# 
+#                  405: Register [23] written with value: [00000123] | [       291]
+# 
+#                  415: Memory [ 64] read with value: [xxxxxxxx] | [         x]
+# 
+#                  415: Memory [ 64] read with value: [00000000] | [         0]
+# 
+#                  420: Memory [ 64] read with value: [00000123] | [       291]
+# 
+#                  425: Register [24] written with value: [00000123] | [       291]
+# 
+#                  435: Memory [ 68] written with value: [000000ff] | [       255]
+# 
+#                  435: Register [25] written with value: [000000ff] | [       255]
+# 
+#                  445: Memory [ 68] read with value: [00000123] | [       291]
+# 
+#                  445: Memory [ 68] read with value: [00000000] | [         0]
+# 
+#                  450: Memory [ 68] read with value: [ffffffff] | [4294967295]
+# 
+#                  455: Register [26] written with value: [ffffffff] | [4294967295]
+# 
+#                  455: Memory [ 68] read with value: [000000ff] | [       255]
+# 
+#                  465: Register [27] written with value: [000000ff] | [       255]
+# 
+#                  475: Memory [ 72] written with value: [00000234] | [       564]
+# 
+#                  475: Register [28] written with value: [00000234] | [       564]
+# 
+#                  485: Memory [ 72] read with value: [000000ff] | [       255]
+# 
+#                  485: Memory [ 72] read with value: [00000000] | [         0]
+# 
+#                  490: Memory [ 72] read with value: [00000234] | [       564]
+# 
+#                  495: Register [29] written with value: [00000234] | [       564]
+# 
+#                  505: Register [30] written with value: [000000a4] | [       164]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   45: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                   55: Register [ 2] written with value: [fffffffd] | [4294967293]
+# 
+#                   65: Register [ 3] written with value: [0000000a] | [        10]
+# 
+#                   75: Register [ 4] written with value: [fffffffd] | [4294967293]
+# 
+#                   85: Register [ 5] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 6] written with value: [000000ff] | [       255]
+# 
+#                  165: Register [ 1] written with value: [fffffffd] | [4294967293]
+# 
+#                  185: Register [ 1] written with value: [0000000a] | [        10]
+# 
+#                  225: Register [ 7] written with value: [00000003] | [         3]
+# 
+#                  265: Register [ 8] written with value: [00000004] | [         4]
+# 
+#                  275: Register [ 9] written with value: [00000001] | [         1]
+# 
+#                  285: Register [10] written with value: [00000000] | [         0]
+# 
+#                  295: Register [11] written with value: [00000001] | [         1]
+# 
+#                  305: Register [12] written with value: [00000000] | [         0]
+# 
+#                  315: Register [13] written with value: [00000014] | [        20]
+# 
+#                  325: Register [14] written with value: [00000005] | [         5]
+# 
+#                  335: Register [15] written with value: [fffffffe] | [4294967294]
+# 
+#                  345: Register [16] written with value: [00000007] | [         7]
+# 
+#                  355: Register [17] written with value: [0000000d] | [        13]
+# 
+#                  365: Register [18] written with value: [fffffff7] | [4294967287]
+# 
+#                  375: Register [19] written with value: [ffffffff] | [4294967295]
+# 
+#                  385: Register [20] written with value: [00000008] | [         8]
+# 
+#                  395: Register [22] written with value: [00000040] | [        64]
+# 
+#                  405: Memory [ 64] written with value: [00000123] | [       291]
+# 
+#                  405: Register [23] written with value: [00000123] | [       291]
+# 
+#                  415: Memory [ 64] read with value: [xxxxxxxx] | [         x]
+# 
+#                  415: Memory [ 64] read with value: [00000000] | [         0]
+# 
+#                  420: Memory [ 64] read with value: [00000123] | [       291]
+# 
+#                  425: Register [24] written with value: [00000123] | [       291]
+# 
+#                  435: Memory [ 68] written with value: [000000ff] | [       255]
+# 
+#                  435: Register [25] written with value: [000000ff] | [       255]
+# 
+#                  445: Memory [ 68] read with value: [00000123] | [       291]
+# 
+#                  445: Memory [ 68] read with value: [00000000] | [         0]
+# 
+#                  450: Memory [ 68] read with value: [ffffffff] | [4294967295]
+# 
+#                  455: Register [26] written with value: [ffffffff] | [4294967295]
+# 
+#                  455: Memory [ 68] read with value: [000000ff] | [       255]
+# 
+#                  465: Register [27] written with value: [000000ff] | [       255]
+# 
+#                  475: Memory [ 72] written with value: [00000234] | [       564]
+# 
+#                  475: Register [28] written with value: [00000234] | [       564]
+# 
+#                  485: Memory [ 72] read with value: [000000ff] | [       255]
+# 
+#                  485: Memory [ 72] read with value: [00000000] | [         0]
+# 
+#                  490: Memory [ 72] read with value: [00000234] | [       564]
+# 
+#                  495: Register [29] written with value: [00000234] | [       564]
+# 
+#                  505: Register [30] written with value: [000000a4] | [       164]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
