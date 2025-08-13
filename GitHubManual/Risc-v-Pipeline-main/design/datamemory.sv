@@ -54,7 +54,6 @@ module datamemory #(
         rd <= Dataout;
         default: rd <= Dataout;
       endcase
-      
     end else if (MemWrite) begin
       case (Funct3)
         3'b000: begin  //SB

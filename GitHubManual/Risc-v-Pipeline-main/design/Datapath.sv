@@ -174,7 +174,7 @@ module Datapath #(
       B.RegWrite <= RegWrite;
       B.MemRead <= MemRead;
       B.MemWrite <= MemWrite;
-      B.RWSel <= (A.Curr_Instr[6:0] == 7'b1101111) || (A.Curr_Instr[6:0] == 7'b1100111); // jal or jalr
+      B.RWSel <= (A.Curr_Instr[6:0] == 7'b1101111) || (A.Curr_Instr[6:0] == 7'b1100111);
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
       B.Curr_Pc <= A.Curr_Pc;

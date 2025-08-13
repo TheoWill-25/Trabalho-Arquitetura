@@ -32,11 +32,11 @@ module alu#(
             4'b1000:        // Equal
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
             4'b1001:        // BNE
-                    ALUResult = ($signed(SrcA) == $signed(SrcB)) ? 0 : 1;
+                    ALUResult = (SrcA == SrcB) ? 0 : 1;
             4'b1010:        // BLT
-                    ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 1 : 0;
+                    ALUResult = (SrcA < SrcB) ? 1 : 0;
             4'b1011:        // BGE
-                    ALUResult = ($signed(SrcA) >= $signed(SrcB)) ? 1 : 0;
+                    ALUResult = (SrcA >= SrcB) ? 1 : 0;
             4'b1101:        // SLLI
                     ALUResult = SrcA << SrcB;
             4'b1110:        // SRLI
