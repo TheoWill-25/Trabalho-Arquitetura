@@ -28,6 +28,7 @@ package Pipe_Buf_Reg_PKG;
     logic [31:0] Curr_Instr;
     logic        Halt_detect;
     logic        Jal;
+    logic        RTypeID;  // 0: R-type; 1: I-type
   } id_ex_reg;
 
   // Reg C

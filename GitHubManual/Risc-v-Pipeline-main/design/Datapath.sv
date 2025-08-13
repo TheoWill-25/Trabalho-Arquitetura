@@ -36,7 +36,9 @@ module Datapath #(
     output logic [DM_ADDRESS-1:0] addr,  // address
     output logic [DATA_W-1:0] wr_data,  // write data
     output logic [DATA_W-1:0] rd_data,  // read data
-    input logic Jal
+    input logic Jal,
+    input logic RTypeID_decode,  // 1 for I-type instructions, 0 for R-type instructions
+    output logic RTypeID_execute  // 1 for I-type instructions, 0 for R-type instructions
 );
 
   logic [PC_W-1:0] PC, PCPlus4, Next_PC, Prov_PC;
@@ -164,6 +166,7 @@ module Datapath #(
       B.func7 <= 0;
       B.Halt_detect <= 0;
       B.Jal <= 0;
+      B.RTypeID <= 0;
       B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end else begin
       B.ALUSrc <= ALUsrc;
@@ -185,6 +188,7 @@ module Datapath #(
       B.func7 <= A.Curr_Instr[31:25];
       B.Halt_detect <= A.Halt_detect;
       B.Jal <= Jal;
+      B.RTypeID <= (A.Curr_Instr[6:0] == 7'b0110011); // 1 for R-type instructions, 0 for I-type instructions
       B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end
   end
@@ -204,6 +208,7 @@ module Datapath #(
   // // //ALU
   assign Funct7 = B.func7;
   assign Funct3 = B.func3;
+  assign RTypeID_execute = B.RTypeID;  // Pass the RTypeID to the execute stage
   assign ALUOp_Current = B.ALUOp;
 
   mux4 #(32) FAmux ( // Mux do Forward de A

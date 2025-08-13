@@ -20,11 +20,13 @@ module riscv #(
 
   logic [6:0] opcode;
   logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch;
-  logic [2:0] ALUop;
+  logic [1:0] ALUop;
   logic [1:0] ALUop_Reg;
   logic [6:0] Funct7;
   logic [2:0] Funct3;
   logic [3:0] Operation;
+  logic RTypeID_decode;  // 0: R-type; 1: I-type
+  logic RTypeID_execute;  // 0: R-type; 1: I-type
   logic Jal;
 
   Controller c (
@@ -35,6 +37,7 @@ module riscv #(
       MemRead,
       MemWrite,
       ALUop,
+      RTypeID,
       Branch,
       Jal
   );
@@ -43,7 +46,7 @@ module riscv #(
       ALUop_Reg,
       Funct7,
       Funct3,
-      opcode,
+      RTypeID_execute,  // 1 for I-type instructions, 0 for R-type instructions
       Operation
   );
 
@@ -71,7 +74,9 @@ module riscv #(
       addr,
       wr_data,
       rd_data,
-      Jal
+      Jal,
+      RTypeID_decode,
+      RTypeID_execute
   );
 
 endmodule
